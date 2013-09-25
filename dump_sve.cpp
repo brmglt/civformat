@@ -209,7 +209,7 @@ class SVEDumper
 			int city = sve.wonders_cities[wonder];
 			if(city > 0)
 			{
-				printf("%s in %s\n", WonderNames[wonder + 1], city_name(sve.cities[city]));
+				printf("%s in %s\n", WonderNames[wonder], city_name(sve.cities[city]));
 			}
 		}
 		for(int civ = 0; civ < 8; civ++)

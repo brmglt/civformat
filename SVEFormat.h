@@ -325,7 +325,7 @@ struct SVEFile
 	{
 		struct Buildings
 		{
-			ubyte aqueduct: 1;
+			ubyte courthouse: 1;
 			ubyte city_walls: 1;
 			ubyte library: 1;
 			ubyte marketplace: 1;
@@ -334,24 +334,27 @@ struct SVEFile
 			ubyte barracks: 1;
 			ubyte palace: 1;
 
-			ubyte bank: 1;
-			ubyte cathedral: 1;
-			ubyte university: 1;
-			ubyte mass_transit: 1;
-			ubyte colloseum: 1;
-			ubyte factory: 1;
-			ubyte mfg_plant: 1;
-			ubyte recycling_center: 1;
+                        ubyte mfg_plant: 1;
+                        ubyte factory: 1;
+                        ubyte colloseum: 1;
+                        ubyte mass_transit: 1;
+                        ubyte university: 1;
+                        ubyte cathedral: 1;
+                        ubyte bank: 1;
+                        ubyte aqueduct: 1;
+
+                        ubyte recycling_center: 1;
+			ubyte rest: 7;
 			//ubyte SDI_defence: 1;
 		} buildings;
-		ubyte wonders[2];
+		ubyte wonders;
 		byte x;
 		byte y;
 		ubyte unkn1;
 		ubyte population;
 		ubyte unk2;
-		ubyte unk3;
 		UNIT_TYPE production;
+		ubyte unk3;
 		ubyte player;
 		ushort food;
 		ushort shields;
